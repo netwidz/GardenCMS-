@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>:: GardenSpa Layout ::</title>
+<style type="text/css">
+<!--
+  @import url(css/styles.css);
+  @import url(css/chromestyle.css);
+  @import url(css/leftmenu.css);
+-->
+</style>
+<script type="text/javascript" language="javascript" src="js/jquery-1.3.2.js"></script>
+<script type="text/javascript" src="js/chrome.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("#left-menu p.menu_head").click(function(){
+	     $(this).next("div.menu_body").slideDown(100).siblings("div.menu_body").slideUp("slow");
+         //$(this).siblings().css({backgroundImage:"url(left.png)"});
+	});
+
+	$('#left-menu p.menu_head:first-child').trigger('click');
+});
+</script>
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="header">
+    	<div id="header-left">
+        	<div class="logo-sep"></div>
+    		<div id="logo"><img src="images/layout/logo.gif" align="logo" width="283" height="98"/></div>
+        	<div class="logo-sep"></div>
+        </div>
+    	<div id="header-right">
+    		<div id="promo-banner">
+            	<img src="images/layout/promo-banner.jpg" align="promo-banner" width="408" height="64"/>
+            </div>
+    		<div id="free-consult">
+            	<img src="images/layout/free-consult.gif" align="free-consult" width="160" height="125"/>
+            </div>
+            
+            <div class="topmenu-sep"></div>
+            <div id="topmenu">
+            	<div class="chromestyle" id="chromemenu">
+                <ul>
+                <li><a href="#" class="first-child">Home</a></li>
+                <li><a href="#" rel="dropmenu1">About Us</a></li>
+                <li><a href="#" rel="dropmenu2">Services</a></li>
+                <li><a href="#" rel="dropmenu3">Patient Center</a></li>	
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Contact Us</a></li>
+                </ul>
+                </div>
+
+                <!--1st drop down menu -->                                                   
+                <div id="dropmenu1" class="dropmenudiv" style="width:250px;">
+                <a href="#">Douglas Dedo, MD Cosmetic Surgeon</a>
+                <a href="#">Neil Goodman,  MD Cosmetic Surgeon</a>
+                </div>
+                
+                
+                <!--2nd drop down menu -->                                                
+                <div id="dropmenu2" class="dropmenudiv" style="width:250px;">
+                <a href="#">Laser & Light Source Tech.</a>
+                <a href="#">Cosmetic Skin Treatments</a>
+                <a href="#">Safe Laser/Liposuction</a>
+                <a href="#">Facial & Body Plastic Surgery</a>
+                <a href="#">Laser and  Liquid Facelifts</a>
+                <a href="#">Vaginal Rejuvenation</a>
+                </div>
+                
+                <!--3rd drop down menu -->                                                   
+                <div id="dropmenu3" class="dropmenudiv">
+                <a href="#">Video</a>
+                <a href="#">FAQ's</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Site Map</a>
+                </div>
+            </div>
+            <div class="topmenu-sep"></div>
+        </div>
+    </div>
+    <div id="center">
+    	<div id="left-col">
+        	<div class="menu_list" id="left-menu"> <!--Code for menu starts here-->
+                <p class="menu_head">Main Category</p>
+                <div class="menu_body">
+                <a href="#">Speciality</a>
+                 <a href="#">Speciality</a>
+                 <a href="#">Speciality</a>	
+                </div>
+                <p class="menu_head">Main Category</p>
+                <div class="menu_body">
+                    <a href="#">Speciality</a>
+                 <a href="#">Speciality</a>
+                 <a href="#">Speciality</a>	
+                </div>
+                <p class="menu_head">Main Category</p>
+                <div class="menu_body">
+                  <a href="#">Speciality</a>
+                 <a href="#">Speciality</a>
+                 <a href="#">Speciality</a>			
+               </div>
+          </div>
+        </div>
+    	<div id="right-col">
+        	<div id="content">
+                <div id="flash-banner">
+                    <img src="images/layout/flash-banner.jpg" align="flash-banner" width="442" height="160"/>
+                </div>
+                <div id="video-one">
+                	<div class="video-title">Video: Meet Dr. Neil Goodman</div>
+                    <img src="images/layout/video-thumb.jpg" align="thumb1" width="185" height="122"/>
+                </div>
+                <div id="video-two">                	
+                	<div class="video-title">Video: Meet Dr. Neil Goodman</div>
+                    <img src="images/layout/video-thumb.jpg" align="thumb2" width="185" height="122"/>
+                </div>
+                <div id="content-text">
+                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec velit nisl, at accumsan odio. Cras semper metus ac massa cursus rhoncus. Nulla ut lobortis arcu. Ut molestie facilisis ligula, eu vulputate velit tristique quis.</p>
+                </div>
+            </div>
+        	<div id="land-pages">
+            	<div class="land-pages">
+                	<img src="images/layout/land-pages.jpg" align="land-pages" width="170" height="80"/>
+                </div>
+            	<div class="land-pages">
+                	<img src="images/layout/land-pages.jpg" align="land-pages" width="170" height="80"/>
+                </div>
+            	<div class="land-pages">
+                	<img src="images/layout/land-pages.jpg" align="land-pages" width="170" height="80"/>
+                </div>
+            	<div class="land-pages">
+                	<img src="images/layout/land-pages.jpg" align="land-pages" width="170" height="80"/>
+                </div>
+            	<div class="land-pages">
+                	<img src="images/layout/land-pages.jpg" align="land-pages" width="170" height="80"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+    	<div id="footer-left"></div>
+    	<div id="footer-right">
+        	<div id="footer-content">
+            	<ul>
+                	<li><a href="#">Home</a></li>
+                	<li>|</li>
+                	<li><a href="#">Contact Us</a></li>
+                	<li>|</li>
+                	<li><a href="#">Privacy</a></li>
+                	<li>|</li>
+                	<li><a href="#">Terms & Conditions</a></li>
+                	<li>|</li>
+                	<li><a href="#">Site Map</a></li>
+                </ul>
+            	<div id="copyright">Copyright 2010 Gardens Laser Spa. All Rights Reserved.</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+cssdropdown.startchrome("chromemenu");
+</script>
+</body>
+</html>

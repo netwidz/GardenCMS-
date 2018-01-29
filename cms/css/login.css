@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+body{ padding:0; margin:0; font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+#header{ width:100%; border-bottom:5px solid #be1e2d; float:left; height:75px; background:/*url(../images/logo.gif) left no-repeat*/ #0071bc;}
+#content{ width:100%; /*border:1px solid #000000;*/ float:left; min-height:165px; margin-top:15px; color:#636363;}
+	#cont-text{ width:350px; min-height:150px; margin:0 auto 0 auto; /*border:1px solid #000000;*/ padding:5px;}
+#footer{ 	width:100%; border-top:2px solid #636363; float:left; height:70px; 
+			margin-top:10px; text-align:center; color:#acacac; clear:both; padding-top:10px;}
+input[type=text],input[type=password]{ width:230px; border:1px solid #d0d0d0;}
+input[type=submit]{ width:125px;}
+
+.error { color:#be1e2d; font-size:11px; font-weight:bold;}
+input.error { color:#000; border:1px dotted #be1e2d; background-color:#FEF3F5;}

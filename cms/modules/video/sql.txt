@@ -1,0 +1,8 @@
+CREATE TABLE `project`.`artist_videos` (
+`id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT ,
+`artist_id` VARCHAR( 45 ) NOT NULL ,
+`video_name` VARCHAR( 100 ) NOT NULL ,
+`added_date` VARCHAR( 100 ) NOT NULL ,
+`status` VARCHAR( 100 ) NOT NULL ,
+PRIMARY KEY ( `id` )
+) ENGINE = InnoDB;

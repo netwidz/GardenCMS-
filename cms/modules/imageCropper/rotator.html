@@ -1,0 +1,34 @@
+<html>
+  <head>
+  <title>Image Rotate
+  </head>
+
+  <body>
+  <img src="" name="Rotating" id="Rotating1" width=100 height=100>
+  <img src="" name="Rotating" id="Rotating2" width=100 height=100>
+
+
+  <script language="JavaScript">
+  var ImageArr1 = new Array("upload_pic/thumbnail_1287259158.jpg","upload_pic/thumbnail_1287259196.jpg","upload_pic/thumbnail_1287259235.jpg");
+  var ImageHolder1 = document.getElementById('Rotating1');
+
+  var ImageArr2 = new Array("upload_pic/thumbnail_1287259584.jpg","upload_pic/thumbnail_1287260554.jpg","upload_pic/thumbnail_1287260730.jpg");
+  var ImageHolder2 = document.getElementById('Rotating2');
+
+  function RotateImages(whichHolder,Start)
+  {
+  	var a = eval("ImageArr"+whichHolder);
+  	var b = eval("ImageHolder"+whichHolder);
+  	if(Start>=a.length)
+  		Start=0;
+  	b.src = a[Start];
+  	window.setTimeout("RotateImages("+whichHolder+","+(Start+1)+")",1500);
+  }
+
+  RotateImages(1,0);
+  RotateImages(2,0);
+
+  </script>
+
+  </body>
+  </html>
